@@ -33,7 +33,7 @@ const Home = () => {
               Senior <span className="text-[#cde633]">Graphic</span> Designer &amp; <br className="hidden sm:inline" />
               Brand <span className="text-[#cde633]">Identity</span> Designer
             </h2>
-            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-xl leading-relaxed">
               Crafting Strategic Brand Identities That Inspire Trust, Drive Growth, and Make Businesses Unforgettable.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 sm:gap-6'>
@@ -50,6 +50,62 @@ const Home = () => {
               </motion.a>
 
             </div>
+
+            {/* Software / Tools Section */}
+            <motion.div 
+              className="mt-10 sm:mt-12 pt-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl">
+                {/* Photoshop */}
+                <div className="relative bg-[#111215]/80 border border-zinc-700/60 rounded-2xl pt-7 pb-3.5 px-2 text-center transition-all hover:border-[#38bdf8]/60 hover:shadow-[0_0_15px_rgba(56,189,248,0.15)] group">
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#001e36] border border-[#0074a6]/50 shadow-md flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <span className="text-[#38bdf8] font-bold text-xl tracking-tight font-sans">Ps</span>
+                  </div>
+                  <span className="inline-block text-gray-200 font-medium text-sm sm:text-base border-b-2 border-[#38bdf8] pb-0.5">
+                    Photoshop
+                  </span>
+                </div>
+
+                {/* Figma */}
+                <div className="relative bg-[#111215]/80 border border-zinc-700/60 rounded-2xl pt-7 pb-3.5 px-2 text-center transition-all hover:border-[#ff7262]/60 hover:shadow-[0_0_15px_rgba(255,114,98,0.15)] group">
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#1e1e1e] border border-white/10 shadow-md flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <svg className="w-5 h-7" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                      <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                      <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                      <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                      <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+                    </svg>
+                  </div>
+                  <span className="inline-block text-gray-200 font-medium text-sm sm:text-base border-b-2 border-[#ff7262] pb-0.5">
+                    Figma
+                  </span>
+                </div>
+
+                {/* Illustrator */}
+                <div className="relative bg-[#111215]/80 border border-zinc-700/60 rounded-2xl pt-7 pb-3.5 px-2 text-center transition-all hover:border-[#ff9a00]/60 hover:shadow-[0_0_15px_rgba(255,154,0,0.15)] group">
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#280c03] border border-[#ff9a00]/50 shadow-md flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <span className="text-[#ff9a00] font-bold text-xl tracking-tight font-sans">Ai</span>
+                  </div>
+                  <span className="inline-block text-gray-200 font-medium text-sm sm:text-base border-b-2 border-[#ff9a00] pb-0.5">
+                    Illustrator
+                  </span>
+                </div>
+
+                {/* After effects */}
+                <div className="relative bg-[#111215]/80 border border-zinc-700/60 rounded-2xl pt-7 pb-3.5 px-2 text-center transition-all hover:border-[#9999ff]/60 hover:shadow-[0_0_15px_rgba(153,153,255,0.15)] group">
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#0a0726] border border-[#9999ff]/50 shadow-md flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <span className="text-[#9999ff] font-bold text-xl tracking-tight font-sans">Ae</span>
+                  </div>
+                  <span className="inline-block text-gray-200 font-medium text-sm sm:text-base border-b-2 border-[#9999ff] pb-0.5">
+                    After effects
+                  </span>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
