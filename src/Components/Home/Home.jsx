@@ -117,9 +117,13 @@ const Home = () => {
                 {/* 7th: PowerPoint */}
                 <div 
                   title="PowerPoint"
-                  className="w-9 h-9 rounded-lg bg-[#260b05] border border-[#d24726]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                  className="w-9 h-9 rounded-lg bg-[#260b05] border border-[#d24726]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer overflow-hidden p-1.5"
                 >
-                  <span className="text-[#d24726] font-bold text-sm tracking-tight font-sans">Pp</span>
+                  <img 
+                    src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Office_PowerPoint_Logo_512px.png" 
+                    alt="PowerPoint" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 {/* 8th: Google Slides */}
