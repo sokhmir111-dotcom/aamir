@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
+import { SiCanva, SiGoogleslides } from 'react-icons/si';
 
 const Home = () => {
   return (
@@ -58,8 +59,8 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <div className="flex items-center gap-3 sm:gap-4">
-                {/* Photoshop */}
+              <div className="flex flex-wrap items-center gap-3 sm:gap-3.5 max-w-2xl">
+                {/* 1st: Photoshop */}
                 <div 
                   title="Photoshop"
                   className="w-9 h-9 rounded-lg bg-[#001e36] border border-[#0074a6]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
@@ -67,7 +68,31 @@ const Home = () => {
                   <span className="text-[#38bdf8] font-bold text-sm tracking-tight font-sans">Ps</span>
                 </div>
 
-                {/* Figma */}
+                {/* 2nd: Illustrator */}
+                <div 
+                  title="Illustrator"
+                  className="w-9 h-9 rounded-lg bg-[#280c03] border border-[#ff9a00]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
+                  <span className="text-[#ff9a00] font-bold text-sm tracking-tight font-sans">Ai</span>
+                </div>
+
+                {/* 3rd: Adobe After Effects */}
+                <div 
+                  title="Adobe After Effects"
+                  className="w-9 h-9 rounded-lg bg-[#0a0726] border border-[#9999ff]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
+                  <span className="text-[#9999ff] font-bold text-sm tracking-tight font-sans">Ae</span>
+                </div>
+
+                {/* 4th: InDesign */}
+                <div 
+                  title="InDesign"
+                  className="w-9 h-9 rounded-lg bg-[#2b0017] border border-[#ff3366]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
+                  <span className="text-[#ff3366] font-bold text-sm tracking-tight font-sans">Id</span>
+                </div>
+
+                {/* 5th: Figma */}
                 <div 
                   title="Figma"
                   className="w-9 h-9 rounded-lg bg-[#1e1e1e] border border-white/10 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
@@ -81,20 +106,28 @@ const Home = () => {
                   </svg>
                 </div>
 
-                {/* Illustrator */}
+                {/* 6th: Canva */}
                 <div 
-                  title="Illustrator"
-                  className="w-9 h-9 rounded-lg bg-[#280c03] border border-[#ff9a00]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                  title="Canva"
+                  className="w-9 h-9 rounded-lg bg-[#002b36] border border-[#00c4cc]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                 >
-                  <span className="text-[#ff9a00] font-bold text-sm tracking-tight font-sans">Ai</span>
+                  <SiCanva className="text-[#00c4cc] text-lg" />
                 </div>
 
-                {/* After Effects */}
+                {/* 7th: PowerPoint */}
                 <div 
-                  title="After Effects"
-                  className="w-9 h-9 rounded-lg bg-[#0a0726] border border-[#9999ff]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                  title="PowerPoint"
+                  className="w-9 h-9 rounded-lg bg-[#260b05] border border-[#d24726]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                 >
-                  <span className="text-[#9999ff] font-bold text-sm tracking-tight font-sans">Ae</span>
+                  <span className="text-[#d24726] font-bold text-sm tracking-tight font-sans">Pp</span>
+                </div>
+
+                {/* 8th: Google Slides */}
+                <div 
+                  title="Google Slides"
+                  className="w-9 h-9 rounded-lg bg-[#261f00] border border-[#f4b400]/50 shadow-sm flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
+                  <SiGoogleslides className="text-[#f4b400] text-lg" />
                 </div>
               </div>
             </motion.div>
