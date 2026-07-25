@@ -4,13 +4,13 @@ import { FiAward, FiBriefcase, FiUsers } from 'react-icons/fi'
 const About = () => {
   const skills = [
     { name: 'Branding & Identity Design', level: 100 },
-    { name: 'Advertising Creative', level: 95 },
-    { name: 'Presentation Design', level: 95 },
-    { name: 'Print Design', level: 90 },
+    { name: 'Advertising Creative', level: 100 },
+    { name: 'Presentation Design', level: 100 },
+    { name: 'Print Design', level: 100 },
+    { name: 'Illustration', level: 100 },
     { name: 'UI/UX Design', level: 90 },
-    { name: 'Illustration', level: 85 },
-    { name: 'Video Editing', level: 85 },
-    { name: 'Motion Graphics', level: 80 },
+    { name: 'Video Editing', level: 90 },
+    { name: 'Motion Graphics', level: 90 },
   ]
 
   return (
